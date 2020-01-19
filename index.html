@@ -1,0 +1,13 @@
+---
+title: Home
+layout: landing-page
+feature_image: "qc3-group-josephs-favorite.jpg"
+feature_text: |
+  # QC3
+---
+
+{% for section in site.data.sections %}
+<section class="section section--{{ section.title }}"id="{{ section.title }}">
+    {% include_relative {{ section.filename }} %}
+  </section>
+{% endfor %}

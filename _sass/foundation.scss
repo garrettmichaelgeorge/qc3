@@ -1,0 +1,5 @@
+// Import Foundation base SCSS files in order so variables are read correctly.
+@import "foundation-base/foundation.scss";
+
+// Import custom Foundation building blocks
+@import "foundation-building-blocks/sticky-shrinknav.scss";

@@ -16,29 +16,36 @@ plugins:
 - jekyll-redirect-from
 - jekyll-default-layout
 - jekyll-feed
-- jemoji
+- jekyll-include-cache
 - jekyll-remote-theme
 
 # Site settings
-url: 'https://mydomain.com'
+url: ''
 baseurl: ''
-title: 'My website'
+title: 'Queen City Composers Collective'
 description: 'This is my new website'
 permalink: pretty
-logo: "https://www.gravatar.com/avatar/6c0377abcf4da91cdd35dea4554b2a4c?s=52"
+logo: ""
 
 # Pagination
 paginate: 5
 paginate_path: blog/page:num
+
+# Content
+image_serve_path: "/assets/images/" # <img src="{{ site.image_serve_path }}/img.jpg">
 
 # Header nav
 navigation_header:
 - title: Home
   url: /
 - title: About
-  url: /about/
-- title: Blog
-  url: /blog/
+  url: "#about"
+- title: Team
+  url: "#team"
+- title: Projects & Media
+  url: "#projects-and-media"
+- title: Contact
+  url: "#contact"
 
 # Footer nav
 navigation_footer:
@@ -47,6 +54,13 @@ navigation_footer:
 
 # Collections
 collections:
+  composers:
+    title: Composers
+    output: true
+    description: "The members of QC3"
+    feature_text: |
+      This is the feature text for Composers collection
+
   posts:
     title: Posts
     output: true
@@ -54,3 +68,19 @@ collections:
     feature_text: |
       Welcome to my blog
     feature_image: "https://picsum.photos/2560/600?image=866"
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "works"
+    values:
+      layout: "work"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+  - scope:
+      path: "assets/images"
+    values:
+      image: true
