@@ -1,9 +1,7 @@
-# Starter kit for [Alembic](https://alembic.darn.es/)
+# QC3 Website
 
-This is a very simple starting point if you wish to use Alembic [as a Jekyll theme gem](https://alembic.darn.es/#as-a-jekyll-theme) or as a [GitHub Pages remote theme](https://github.com/daviddarnes/alembic-kit/tree/remote-theme) (see `remote-theme` branch).
+This is the website for the Queen City Composers Collective, currently under
+construction.
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/daviddarnes/alembic-kit)
-
-or
-
-**[Download the GitHub Pages kit](https://github.com/daviddarnes/alembic-kit/archive/remote-theme.zip)**
+## Colophon
+Built on Jekyll static site generator using [Alembic](https://alembic.darn.es/) theme.
