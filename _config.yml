@@ -54,9 +54,14 @@ navigation_footer:
 
 # Collections
 collections:
+  projects:
+    title: Projects
+    output: true
+    description: "Past projects by QC3"
+
   members:
     title: Members
-    output: true
+    output: false
     description: "The fabulous members of QC3"
     feature_text: |
       This is the feature text for Members collection

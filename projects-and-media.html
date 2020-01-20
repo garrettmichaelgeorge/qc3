@@ -1,16 +1,14 @@
 <h2>Projects &amp; Media</h2>
 <p>Check out our fabulous past projects!</p>
 
-<h3>Unheard-of Ensemble</h3>
-<p>We collaborated with Unheard-of Ensemble and put on a kickass concert on Feburary 14, 2018 at Leapin' Lizard, Covington, KY.
-<!-- Concert poster -->
-<figure class="figure figure--center">
-  <img src="{{ "concert-unheard-of-2018.jpg" | prepend: site.image_serve_path }}" alt="Album cover for Polychrome album" width="950" height="950">
-</figure>
+<!-- Content from each Project page from _projects -->
+{% for project in site.projects %}
+  <article class="project">
+    {{ project.content }}
+  </article>
+{% else %}
+  <article class="project">
+    <p>The collection is super empty.</p>
+  </article>
+{% endfor %}
 
-<h3>Album released with Centaur Records: <i>Polychrome</i></h3>
-<p>We collaborated with Unheard-of Ensemble and put on a kickass concert on Feburary 14, 2018 at Leapin' Lizard, Covington, KY.
-<!-- Album Cover -->
-<figure class="figure figure--center">
-  <img src="{{ "polychrome-cover.jpg" | prepend: site.image_serve_path }}" alt="Album cover for Polychrome album" width="950" height="950">
-</figure>
