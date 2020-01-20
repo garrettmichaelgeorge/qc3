@@ -1,2 +1,14 @@
 <h2>Team</h2>
-<p>Team content goes here.</h2>
+
+<div class="">
+  <ul>
+    {% for member in site.members %}
+      <li>
+        <img src="{{ member.headshot | prepend: site.image_serve_path }}" alt="[Headshot]">
+        <h5>{{ member.full_name }}</h5>
+        <p>{{ member.hometown }}</p>
+        <p>{{ member.birth_year }}</p>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

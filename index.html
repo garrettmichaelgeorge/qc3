@@ -7,7 +7,7 @@ feature_text: |
 ---
 
 {% for section in site.data.sections %}
-<section class="section section--{{ section.title }}"id="{{ section.title }}">
+<section id="{{ section.title | downcase }}" class="section section--{{ section.title | downcase }}">
     {% include_relative {{ section.filename }} %}
   </section>
 {% endfor %}

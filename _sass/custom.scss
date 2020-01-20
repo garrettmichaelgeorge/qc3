@@ -1,7 +1,23 @@
 /* Custom SCSS added to the Alembic theme */
 
+/* Header */
+
 .feature {
   height: 100vh;
+}
+
+/* Sections */
+.header .container--nav {
+  position: fixed;
+  right: 0;
+  left: 0;
+  background-color: #d3d3d3d3;
+//  padding-left: 1em;
+//  padding-right: 1em;
+  border-radius: 2px;
+  width: 100vw;
+  margin: 0;
+
 }
 
 .section {
@@ -10,4 +26,18 @@
 
 .feature h1 {
   font-size: 10rem;
+}
+
+#team {
+  ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+  li {
+    list-style: none;
+  }
 }

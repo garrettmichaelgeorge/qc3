@@ -25,7 +25,7 @@ baseurl: ''
 title: 'Queen City Composers Collective'
 description: 'This is my new website'
 permalink: pretty
-logo: ""
+# logo: ""
 
 # Pagination
 paginate: 5
@@ -54,12 +54,12 @@ navigation_footer:
 
 # Collections
 collections:
-  composers:
-    title: Composers
+  members:
+    title: Members
     output: true
-    description: "The members of QC3"
+    description: "The fabulous members of QC3"
     feature_text: |
-      This is the feature text for Composers collection
+      This is the feature text for Members collection
 
   posts:
     title: Posts
