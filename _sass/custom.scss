@@ -4,6 +4,7 @@
 
 .feature {
   height: 100vh;
+  background: url(/assets/images/qc3-group-josephs-favorite.jpg) center / 100% auto no-repeat;
 }
 
 /* Sections */
@@ -39,5 +40,8 @@
   }
   li {
     list-style: none;
+  }
+  img {
+    border-radius: 50%;
   }
 }

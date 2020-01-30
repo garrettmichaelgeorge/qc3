@@ -23,8 +23,9 @@ plugins:
 url: ''
 baseurl: ''
 title: 'Queen City Composers Collective'
-description: 'This is my new website'
+description: 'The website of QC3: the Queen City Composers Collective'
 permalink: pretty
+email: "qc3@example.com"
 # logo: ""
 
 # Pagination
@@ -42,8 +43,8 @@ navigation_header:
   url: "#about"
 - title: Team
   url: "#team"
-- title: Projects & Media
-  url: "#projects-and-media"
+- title: Projects
+  url: "#projects"
 - title: Contact
   url: "#contact"
 
@@ -56,7 +57,7 @@ navigation_footer:
 collections:
   projects:
     title: Projects
-    output: true
+    output: false
     description: "Past projects by QC3"
 
   members:

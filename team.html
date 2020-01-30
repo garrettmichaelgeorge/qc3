@@ -4,8 +4,13 @@
   <ul>
     {% for member in site.members %}
       <li>
-        <img src="{{ member.headshot | prepend: site.image_serve_path }}" alt="[Headshot]">
-        <h5>{{ member.full_name }}</h5>
+        {% if member.headshot %}
+          <img src="{{ member.headshot | prepend: site.image_serve_path }}" alt="[Headshot]">
+        {% else %}
+        <img src="https://place-hold.it/200x200?text=Headshot" alt="Headshot">
+        {% endif %}
+
+        <h3>{{ member.full_name }}</h3>
         <p>{{ member.hometown }}</p>
         <p>{{ member.birth_year }}</p>
       </li>

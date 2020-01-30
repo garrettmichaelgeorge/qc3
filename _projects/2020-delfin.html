@@ -1,0 +1,53 @@
+---
+
+title: Recording and Tour with Pianist Michael Delf&iacute;n
+type: Recording
+year: 2020
+venue: Werner Recital Hall, College-Conservatory of Music, University of Cincinnati
+description: We released an album of original works for solo flute and solo clarinet in January 2020 on Centaur Records, one of the oldest and largest independent classical music labels in the <abbr class="small-caps">US</abbr>. The music was composed in Spring 2018, recorded in May 2018, and mixed and mastered in Summer 2018.
+
+collaborators:
+  - name: Michael Delf&iacute;n
+    role: performer
+    url: https://michaeldelfinpianist.net
+
+
+
+links:
+  - name: Kickstarter campaign
+    url: https://www.kickstarter.com/projects/2037379216/sounds-of-cincinnati-new-music-for-flute-and-clari/
+  - name:
+    url:
+  - name:
+    url:
+  - name:
+    url:
+
+media:
+  images:
+    delfin-headshot:
+      url: delfin-headshot.webp
+      caption: Headshot of Michael Delf&iacute;n, pianist
+      featured?: true
+
+---
+
+<!-- Title and Description -->
+<h3>{{ page.title }}</h3>
+<p>{{ page.description }}</p>
+<!-- Project Main Image -->
+<figure class="figure figure--center">
+  <img src="{{ page.media.images.delfin-headshot.url | prepend: site.image_serve_path }}" alt="{{ page.media.images.delfin-headshot.caption }}">
+</figure>
+
+  <!-- List of collaborators -->
+
+  <dl>
+    {% for collaborator in page.collaborators %}
+      <dt>{{ collaborator.name }}<dt>
+      <dd>{{ collaborator.role }}</dd>
+    {% else %}
+      <h6>Notice</h6>
+      <p>The collection is empty.</p>
+    {% endfor %}
+  </dl>

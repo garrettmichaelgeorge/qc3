@@ -3,6 +3,22 @@
 title: Polychrome
 type: recording
 year: 2020
+venue: Werner Recital Hall, College-Conservatory of Music, University of Cincinnati
+description: We released an album of original works for solo flute and solo clarinet in January 2020 on <a href="https://centaurrecords.com">Centaur Records</a>, one of the oldest and largest independent classical music labels in the <abbr class="small-caps">US</abbr>. The music was composed in Spring 2018, recorded in May 2018, and mixed and mastered in Summer 2018.
+
+links:
+  - name: Kickstarter campaign
+    url: https://www.kickstarter.com/projects/2037379216/sounds-of-cincinnati-new-music-for-flute-and-clari/
+  - name:
+    url:
+  - name:
+    url:
+  - name:
+    url:
+
+
+
+
 collaborators:
   - name: Lizzy Darling
     role: flute
@@ -14,19 +30,29 @@ collaborators:
     role: label
     url: https://www.centaurrecords.com
 
-images:
-  - title: Polychrome album cover
-    featured?: yes
-    url: polychrome-cover.jpg
+media:
+  images:
+    - title: Polychrome album cover
+      url: polychrome-cover.jpg
+      caption:
+      featured?: true
 
-  - title:
-    featured?: yes
-    url:
+    - title: Centaur label
+      url: centaur-label.png
+      caption:
+      featured?: false
+
 ---
 
   <!-- Title and Description -->
   <h3>Album released with Centaur Records: <i>Polychrome</i></h3>
-  <p>We released an album of original works for solo flute and solo clarinet in January 2020 on Centaur Records, one of the oldest and largest independent classical music labels in the <abbr class="small-caps">US</abbr>. The music was composed in Spring 2018, recorded in May 2018, and mixed and mastered in Summer 2018.</p>
+
+  <!-- Album Cover -->
+  <figure class="figure figure--right">
+    <img src="{{ "polychrome-cover.jpg" | prepend: site.image_serve_path }}" alt="Album cover for Polychrome album" width="950" height="950">
+  </figure>
+
+  <p></p>
 
   <!-- List of collaborators -->
   <dl>
@@ -39,7 +65,5 @@ images:
     {% endfor %}
   </dl>
 
-  <!-- Album Cover -->
-  <figure class="figure figure--center">
-    <img src="{{ "polychrome-cover.jpg" | prepend: site.image_serve_path }}" alt="Album cover for Polychrome album" width="950" height="950">
-  </figure>
+  <!-- Centaur label -->
+  {% include figure.html image='page.images.url' position="right" alt="Centaur label" width="950" height="950" %}

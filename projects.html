@@ -1,4 +1,4 @@
-<h2>Projects &amp; Media</h2>
+<h2>Projects</h2>
 <p>Check out our fabulous past projects!</p>
 
 <!-- Content from each Project page from _projects -->
@@ -8,6 +8,6 @@
   </article>
 {% else %}
   <article class="project">
-    <p>The collection is super empty.</p>
+    <p>{{ project.title }} has no content.</p>
   </article>
 {% endfor %}
