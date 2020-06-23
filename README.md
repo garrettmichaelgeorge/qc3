@@ -4,7 +4,6 @@
 
 This is the website for the Queen City Composers Collective, a group of
 collaborative musical artists who create dynamic, impactful projects.
-construction.
 
 ## Colophon
 Designed and built using [Webflow](https://webflow.com) and
