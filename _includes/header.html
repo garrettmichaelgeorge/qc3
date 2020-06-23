@@ -1,0 +1,32 @@
+<header class="hero-full-screen">
+  <div class="top-bar-container" data-sticky-container>
+    <div class="top-bar sticky sticky-topbar" data-sticky data-options="anchor: page; marginTop: 0; stickyOn: small;">
+
+      <!-- Site Logo -->
+      <div class="top-bar-title">
+        <a class="topbar-responsive-logo" href="/">
+          <img src="{{ 'logos/qc3-logo.png' | prepend: site.image_serve_path }}" class="logo"
+            alt="Queen City Composers Collective logo">
+        </a>
+      </div>
+
+      <!-- Nav -->
+      <nav class="top-bar-right">
+        <!-- <nav> -->
+        <ul class="menu" data-smooth-scroll>
+          {% for item in site.data.sections %}
+          <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+          {% endfor %}
+        </ul>
+        <!-- </nav> -->
+        <!-- </div> -->
+
+      </nav>
+    </div>
+  </div>
+</header>
+
+<!-- Background Image -->
+<div id="hero" class="hero"
+  style="background-image: url({{ page.hero_image | prepend: site.image_serve_path }});">
+</div>

@@ -30,40 +30,45 @@ collaborators:
     role: label
     url: https://www.centaurrecords.com
 
-media:
-  images:
-    - title: Polychrome album cover
-      url: polychrome-cover.jpg
-      caption:
-      featured?: true
+images:
+  polychrome_album_cover:
+    title: Polychrome album cover
+    url: polychrome-cover.jpg
+    caption:
+    featured?: true
 
-    - title: Centaur label
-      url: centaur-label.png
-      caption:
-      featured?: false
+  centaur_logo:
+    title: Centaur logo
+    url: centaur-logo.png
+    caption: Centaur logo
+    featured?: false
 
 ---
 
-  <!-- Title and Description -->
-  <h3>Album released with Centaur Records: <i>Polychrome</i></h3>
+<!-- Title and Description -->
+<h3>Album released with Centaur Records: <i>Polychrome</i></h3>
 
-  <!-- Album Cover -->
-  <figure class="figure figure--right">
-    <img src="{{ "polychrome-cover.jpg" | prepend: site.image_serve_path }}" alt="Album cover for Polychrome album" width="950" height="950">
-  </figure>
+<!-- Album Cover -->
+<figure class="figure figure--right">
+  <img src="{{ "polychrome-cover.jpg" | prepend: site.image_serve_path }}" alt="Album cover for Polychrome album"
+    width="950" height="950">
+</figure>
 
-  <p></p>
+<p></p>
 
-  <!-- List of collaborators -->
-  <dl>
-    {% for collaborator in page.collaborators %}
-      <dt>{{ collaborator.name }}<dt>
-      <dd>{{ collaborator.role }}</dd>
-    {% else %}
-      <h6>Notice</h6>
-      <p>The collection is empty.</p>
-    {% endfor %}
-  </dl>
+<!-- List of collaborators -->
+<dl>
+  {% for collaborator in page.collaborators %}
+    <dt>{{ collaborator.name }}</dt>
+    <dd>{{ collaborator.role }}</dd>
+  {% else %}
+  <h6>Notice</h6>
+  <p>The collection is empty.</p>
+  {% endfor %}
+</dl>
 
-  <!-- Centaur label -->
-  {% include figure.html image='page.images.url' position="right" alt="Centaur label" width="950" height="950" %}
+<!-- Centaur label -->
+<figure class="figure figure--right">
+  {% assign image = page.images.centaur_logo %}
+  <img src="{{ image.url | prepend: site.image_serve_path }}" alt="{{ image.caption }}" width="950" height="950">
+</figure>

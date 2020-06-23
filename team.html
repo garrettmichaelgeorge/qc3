@@ -1,13 +1,12 @@
 <h2>Team</h2>
 
-<div class="">
-  <ul>
+  <ul class="team-wrapper">
     {% for member in site.members %}
-      <li>
+      <li class="{{ member.short_name }}">
         {% if member.headshot %}
-          <img src="{{ member.headshot | prepend: site.image_serve_path }}" alt="[Headshot]">
+        <img src="{{ member.headshot | prepend: site.image_serve_path }}" alt="Headshot of {{ member.full_name }}">
         {% else %}
-        <img src="https://place-hold.it/200x200?text=Headshot" alt="Headshot">
+          <img src="https://place-hold.it/200x200?text=Headshot" alt="Headshot">
         {% endif %}
 
         <h3>{{ member.full_name }}</h3>
@@ -16,4 +15,3 @@
       </li>
     {% endfor %}
   </ul>
-</div>

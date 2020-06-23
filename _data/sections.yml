@@ -1,12 +1,16 @@
 - title: About
+  url: "#about"
   filename: about.html
 
 - title: Team
+  url: "#team"
   filename: team.html
 
 - title: Projects
+  url: "#projects"
   filename: projects.html
 
 - title: Contact
+  url: "#contact"
   filename: contact.html
 

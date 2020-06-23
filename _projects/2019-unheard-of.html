@@ -8,11 +8,20 @@ collaborators:
     role: performer
     url: https://www.unheard-ofproject.com
 
+images:
+  concert-poster:
+    title: Concert Poster for Unheard-of
+    url: unheard-of-concert-poster-2019.jpg
+    caption:
+    featured?: true
+
 ---
 
 <h3>Unheard-of Ensemble</h3>
 <p>We collaborated with Unheard-of Ensemble and put on a kickass concert on Feburary 14, 2018 at Leapin' Lizard, Covington, KY.
 <!-- Concert poster -->
-<figure class="figure figure--center">
-  <img src="{{ "concert-unheard-of-2018.jpg" | prepend: site.image_serve_path }}" alt="Album cover for Polychrome album" width="950" height="950">
+<figure class="">
+  {% assign image = page.images.concert-poster %}
+  <img src="{{ image.url | prepend: site.image_serve_path }}" alt="{{ image.caption }}" width="950" height="950">
 </figure>
+

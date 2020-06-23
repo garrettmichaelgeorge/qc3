@@ -1,5 +1,4 @@
 # Set theme
-remote_theme: daviddarnes/alembic
 
 # File excludes
 exclude:
@@ -14,10 +13,8 @@ plugins:
 - jekyll-paginate
 - jekyll-seo-tag
 - jekyll-redirect-from
-- jekyll-default-layout
 - jekyll-feed
 - jekyll-include-cache
-- jekyll-remote-theme
 
 # Site settings
 url: ''
@@ -33,25 +30,9 @@ paginate: 5
 paginate_path: blog/page:num
 
 # Content
-image_serve_path: "/assets/images/" # <img src="{{ site.image_serve_path }}/img.jpg">
-
-# Header nav
-navigation_header:
-- title: Home
-  url: /
-- title: About
-  url: "#about"
-- title: Team
-  url: "#team"
-- title: Projects
-  url: "#projects"
-- title: Contact
-  url: "#contact"
-
-# Footer nav
-navigation_footer:
-- title: Back to top
-  url: "#top"
+stylesheet_serve_path: "/css" # <link rel="stylesheet" href="{{ site.stylesheet_serve_path }}"
+image_serve_path: "/images" # <img src="{{ site.image_serve_path }}/img.jpg">
+js_serve_path: "/js"
 
 # Collections
 collections:
