@@ -1,8 +1,13 @@
 # QC3 Website
 
-This is the website for the Queen City Composers Collective, currently under
+*Under construction*
+
+This is the website for the Queen City Composers Collective, a group of
+collaborative musical artists who create dynamic, impactful projects.
 construction.
 
 ## Colophon
-Built on [Jekyll](https://jekyllrb.com) static site generator using [Alembic](https://alembic.darn.es/)
-theme. Hosted on Netlify.
+Designed and built using [Webflow](https://webflow.com) and
+[Jekyll](https://jekyllrb.com) static site generator. Hosted on Netlify.
+The typefaces are Playfair Display by Claus Eggers Sørensen and Source Sans by
+Paul D. Hunt.
